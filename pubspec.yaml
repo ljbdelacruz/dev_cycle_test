@@ -1,0 +1,32 @@
+name: temp_project
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  flutter_dotenv: ^5.1.0
+  devcycle_flutter_client_sdk: ^1.8.4
+  dartz: ^0.10.1
+  equatable: ^2.0.3
+  get_it: ^7.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter: 
+  uses-material-design: true
+  assets: 
+    - assets/
+
