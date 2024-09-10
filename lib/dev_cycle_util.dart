@@ -14,6 +14,7 @@ class DevCycleUtil extends IDevCycleUtils {
 
   DevCycleClient _setupDevCycleClient(String? userId){
     if(devCClient == null) {
+      print(devCycleKey);
       devCClient = DevCycleClientBuilder()
           .sdkKey(devCycleKey ?? "")
           .user(DevCycleUserBuilder().userId(userId ?? '1ee').build())
