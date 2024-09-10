@@ -39,6 +39,12 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   
+  @override
+  void initState() {
+    super.initState();
+    fetchAds(); // Call fetchAds when the widget is initialized
+  }
+
   String? displayData = "No Data";
 
   fetchAds() async {
@@ -55,7 +61,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    fetchAds();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
